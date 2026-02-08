@@ -27,30 +27,29 @@ Aplicação de lista de tarefas com CRUD completo, edição inline e salvamento 
 
 ---
 
-## 🧱 Estrutura do projeto
+## Estrutura do Projeto
 
-to-do-list/\n
+```
+to-do-list/
 │
 ├── index.html
 │
 ├── assets/
-│ ├── css/
-│ │ ├── reset.css
-│ │ └── style.css
-│ │
-│ ├── js/
-│ │ ├── data.js
-│ │ ├── storage.js
-│ │ ├── ui.js
-│ │ └── main.js
-│ │
-│ └── icons/
+│   ├── css/
+│   │   ├── reset.css
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   ├── data.js
+│   │   ├── storage.js
+│   │   ├── ui.js
+│   │   └── main.js
+│   │
+│   └── icons/
 │
 ├── README.md
 └── .gitignore
-
-
----
+```
 
 ## 🧠 Arquitetura
 
@@ -105,5 +104,6 @@ Este projeto tem fins **educacionais**, com o objetivo de:
 ## 📄 Licença
 
 Projeto desenvolvido apenas para fins de estudo.
+
 
 
