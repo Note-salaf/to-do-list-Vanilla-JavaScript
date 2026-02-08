@@ -29,7 +29,7 @@ Aplicação de lista de tarefas com CRUD completo, edição inline e salvamento 
 
 ## 🧱 Estrutura do projeto
 
-to-do-list/
+to-do-list/\n
 │
 ├── index.html
 │
@@ -105,4 +105,5 @@ Este projeto tem fins **educacionais**, com o objetivo de:
 ## 📄 Licença
 
 Projeto desenvolvido apenas para fins de estudo.
+
 
