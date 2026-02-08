@@ -105,3 +105,4 @@ Este projeto tem fins **educacionais**, com o objetivo de:
 ## 📄 Licença
 
 Projeto desenvolvido apenas para fins de estudo.
+
