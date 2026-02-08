@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>To Do List</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <main class="app">
+
+    <!-- Header -->
+    <header class="app-header">
+      <h1 class="app-title">To Do List</h1>
+      <p class="app-subtitle">Organize suas tarefas</p>
+    </header>
+
+    <!-- Formulário de criação -->
+    <section class="task-create">
+      <form id="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Digite uma nova tarefa"
+          autocomplete="off"
+        />
+        <button type="submit" class="btn-add" aria-label="Adicionar tarefa">
+          +
+        </button>
+      </form>
+    </section>
+
+    <!-- Lista de tarefas -->
+    <section class="task-list">
+      <ul id="task-list">
+
+        <!-- Exemplo de tarefa pendente -->
+        <li class="task-item">
+          <label class="task-main">
+            <input type="checkbox" />
+            <span class="task-text">Estudar JavaScript</span>
+          </label>
+
+          <span class="task-date">Criada em: 08/02/2026</span>
+
+          <div class="task-actions">
+            <button class="btn-edit">Editar</button>
+            <button class="btn-delete">Excluir</button>
+          </div>
+        </li>
+
+        <!-- Exemplo de tarefa concluída -->
+        <li class="task-item completed">
+          <label class="task-main">
+            <input type="checkbox" checked />
+            <span class="task-text">Revisar CSS Grid</span>
+          </label>
+
+          <span class="task-date">Criada em: 07/02/2026</span>
+
+          <div class="task-actions">
+            <button class="btn-edit">Editar</button>
+            <button class="btn-delete">Excluir</button>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Estado vazio -->
+      <p class="empty-state">Nenhuma tarefa ainda</p>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

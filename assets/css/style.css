@@ -1,0 +1,161 @@
+/* ===== Variáveis ===== */
+:root {
+  --bg-page: #f5f7fb;
+  --bg-card: #ffffff;
+  --text-primary: #2e3440;
+  --text-secondary: #7a8190;
+  --accent: #6fa8dc;
+  --danger: #e57373;
+  --border: #e6e8ef;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Layout geral ===== */
+body {
+  background-color: var(--bg-page);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 520px;
+  background-color: var(--bg-card);
+  border-radius: 24px;
+  padding: 32px 28px 40px;
+  box-shadow: var(--shadow);
+}
+
+/* ===== Header ===== */
+.app-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.app-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.app-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* ===== Criar tarefa ===== */
+.task-create form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+#task-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.btn-add {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* ===== Lista ===== */
+.task-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== Card da tarefa ===== */
+.task-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Linha principal */
+.task-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.task-main input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.task-text {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+/* Data */
+.task-date {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-left: 30px;
+}
+
+/* Ações */
+.task-actions {
+  display: flex;
+  gap: 14px;
+  margin-left: auto;
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btn-edit {
+  color: var(--accent);
+}
+
+.btn-delete {
+  color: var(--danger);
+}
+
+/* ===== Estado concluído ===== */
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+.task-item.completed {
+  opacity: 0.75;
+}
+
+/* ===== Estado vazio ===== */
+.empty-state {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
