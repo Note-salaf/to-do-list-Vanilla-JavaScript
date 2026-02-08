@@ -1,6 +1,6 @@
 # To Do List – Vanilla JavaScript
 
-Demo: 
+Demo: https://note-salaf.github.io/to-do-list-Vanilla-JavaScript/
 
 Projeto de estudo desenvolvido para praticar fundamentos de **HTML, CSS e JavaScript puro**, com foco em organização de código, manipulação do DOM e persistência de dados no navegador. Criado usando chatgpt.
 
@@ -104,6 +104,7 @@ Este projeto tem fins **educacionais**, com o objetivo de:
 ## 📄 Licença
 
 Projeto desenvolvido apenas para fins de estudo.
+
 
 
 
